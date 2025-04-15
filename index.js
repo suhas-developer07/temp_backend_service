@@ -51,7 +51,7 @@ app.get("/me",(req,res)=>{
     res.status(200).json({message:"hello from me"});
 }
 )
-
-app.listen(3000,()=>{
+const PORT = process.env.PORT || 3000;
+app.listen(PORT,()=>{
     console.log("server activated");
 })
